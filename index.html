@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg">
+    <div class="wrapper">
+      <header>
+        <h1>⛩️☯ My To - do List ☯⛩️</h1>
+        <p class="subtitle">Plan your day. Finish your list.</p>
+      </header>
+
+      <div class="input-box">
+        <input id="todoInput" type="text" placeholder="Type a task and press Enter">
+        <button id="addBtn" class="btn primary">Add</button>
+      </div>
+
+      <div class="panel">
+        <div class="top-row">
+          <div class="filters">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="active">Active</button>
+            <button class="filter" data-filter="completed">Completed</button>
+          </div>
+          <span id="itemsLeft" class="count">0 items left</span>
+        </div>
+
+        <ul id="todoList" class="todo-list"></ul>
+
+        <div class="bottom-row">
+          <button id="clearCompletedBtn" class="btn subtle">Clear Completed</button>
+          <button id="clearAllBtn" class="btn danger">Clear All</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

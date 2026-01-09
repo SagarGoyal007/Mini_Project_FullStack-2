@@ -1,0 +1,237 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:system-ui,sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background:#cffff4;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.bg{
+  width:100%;
+  padding:24px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.wrapper{
+  width:800px;              /* YAHAN se card bahut bada ho gaya */
+  max-width:95vw;           /* chhoti screen pe responsive */
+  background:#ffffff;
+  border-radius:26px;
+  padding:40px;
+  box-shadow:0 18px 50px rgba(0,0,0,0.08);
+  color:#134d4a;
+  border:1px solid #a5f5e8;
+}
+
+header{
+  text-align:center;
+  margin-bottom:24px;
+}
+
+header h1{
+  font-size:32px;
+  color:#0f8078;
+  font-weight:700;
+}
+
+.subtitle{
+  font-size:15px;
+  color:#1c6d66;
+  margin-top:8px;
+}
+
+.input-box{
+  display:flex;
+  gap:14px;
+  margin-bottom:22px;
+}
+
+#todoInput{
+  flex:1;
+  padding:14px 18px;
+  border-radius:18px;
+  border:1px solid #85e6d8;
+  background:#f5fffd;
+  font-size:16px;
+  color:#13524f;
+}
+
+#todoInput:focus{
+  border-color:#1dd6c7;
+  outline:none;
+}
+
+#todoInput::placeholder{
+  color:#8ebcb8;
+}
+
+.btn{
+  border:none;
+  border-radius:16px;
+  padding:12px 20px;
+  font-size:15px;
+  cursor:pointer;
+  transition:0.1s;
+}
+
+.btn:active{
+  transform:scale(0.95);
+}
+
+.btn.primary{
+  background:#21d4c2;
+  color:white;
+}
+
+.btn.subtle{
+  background:#c8fff4;
+  color:#0f8078;
+}
+
+.btn.danger{
+  background:#ff9b9b;
+  color:white;
+}
+
+.panel{
+  background:#ffffff;
+  border-radius:22px;
+  padding:20px;
+  border:1px solid #baf7ec;
+}
+
+.top-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:12px;
+}
+
+.filters{
+  display:flex;
+  gap:12px;
+}
+
+.filter{
+  border:none;
+  border-radius:14px;
+  padding:8px 16px;
+  background:#e4fffa;
+  color:#0d706a;
+  font-size:14px;
+  cursor:pointer;
+}
+
+.filter.active{
+  background:#21d4c2;
+  color:white;
+}
+
+.todo-list{
+  list-style:none;
+  margin-top:12px;
+  max-height:380px;
+  overflow-y:auto;
+}
+
+.todo-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px;
+  margin-bottom:10px;
+  border-radius:16px;
+  background:#e3fffa;
+  border:1px solid #d2fff5;
+  color:#134d4a;
+  transition:0.15s;
+  font-size:16px;
+}
+
+.todo-item:hover{
+  background:#d0fff4;
+}
+
+.todo-main{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex:1;
+}
+
+.todo-check{
+  width:20px;
+  height:20px;
+  accent-color:#21d4c2;
+  cursor:pointer;
+}
+
+.todo-text{
+  font-size:16px;
+}
+
+.todo-item.completed .todo-text{
+  text-decoration:line-through;
+  color:#7d9f9b;
+}
+
+.todo-edit-input{
+  flex:1;
+  padding:8px 10px;
+  border-radius:10px;
+  border:1px solid #85e6d8;
+  background:#f5fffd;
+  color:#13524f;
+  font-size:15px;
+  display:none;
+}
+
+.todo-item.editing .todo-text{
+  display:none;
+}
+
+.todo-item.editing .todo-edit-input{
+  display:block;
+}
+
+.todo-actions{
+  display:flex;
+  gap:10px;
+  margin-left:8px;
+}
+
+.btn.small{
+  padding:7px 12px;
+  font-size:13px;
+  border-radius:10px;
+}
+
+.btn.edit-btn{
+  background:#d2fff8;
+  color:#0f8078;
+}
+
+.btn.delete-btn{
+  background:#ffe6e6;
+  color:#c74e4e;
+}
+
+.count{
+  font-size:14px;
+  color:#157571;
+}
+
+.bottom-row{
+  margin-top:18px;
+  display:flex;
+  justify-content:space-between;
+}
